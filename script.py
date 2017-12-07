@@ -60,6 +60,7 @@ class TweetAnalyser(object):
 
 
 api = TweetAnalyser()
+print("Please enter the query you want to be analysed tweets for")
 query = str(input())
 tweets = api.get_tweets(query, count = 20000)
 
