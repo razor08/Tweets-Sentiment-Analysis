@@ -60,7 +60,8 @@ class TweetAnalyser(object):
 
 
 api = TweetAnalyser()
-tweets = api.get_tweets(query = 'Natural Language Processing', count = 20000)
+query = str(input())
+tweets = api.get_tweets(query, count = 20000)
 
 # Retrieving positive tweets
 ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
